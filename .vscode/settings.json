@@ -1,0 +1,10 @@
+{
+    "cSpell.words": [
+        "filelock",
+        "itsdangerous",
+        "platformdirs",
+        "protobuf",
+        "virtualenv",
+        "Werkzeug"
+    ]
+}

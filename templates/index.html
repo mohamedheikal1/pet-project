@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPicks App;</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css/style.css') }}">
+</head>
+<body>
+ 
+    <h1>PetPicks App 🐶🐱</h1>
+ 
+    <form id="upload-form">
+ 
+        <div id="upload-btn-wrapper">
+            <input type="file" name="file" id="file-input" accept="image/*" required>
+            <label for="file-input">Choose a file</label>
+        </div>
+        <button type="submit">Classify</button>
+ 
+    </form>
+ 
+    <div id="result-container"></div>
+ 
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+   
+</body>
+</html>

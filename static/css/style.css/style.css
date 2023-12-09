@@ -1,0 +1,89 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #E76F51;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+ 
+ 
+#upload-form {
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: #F4A261;
+    padding: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+#file-input {
+    display: none;
+}
+ 
+#upload-btn-wrapper {
+    position:relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+ 
+#upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity: 0;
+}
+ 
+#upload-btn-wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 16px;
+    background-color: #E9C46A;
+    transition: background-color 0.9s ease-in-out;
+}
+ 
+#upload-btn-wrapper label:hover {
+    background-color: #E76F51;
+}
+ 
+button {
+    cursor: pointer;
+    background-color: #2A9D8F;
+    color:#fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+ 
+button:hover {
+    background-color: #264653;
+}
+ 
+#result-container {
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/*Responsive Design*/
+
+@media screen and (max-width: 600px) {
+     .upload-btn-wrapper label {
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    #upload-form {
+        padding: 20px;
+    }
+}
